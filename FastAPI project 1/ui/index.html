@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iris Flower Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="container">
+    <h2>Iris Flower Prediction</h2>
+
+    <label>Sepal Length</label>
+    <input type="number" id="sl" step="any">
+
+    <label>Sepal Width</label>
+    <input type="number" id="sw" step="any">
+
+    <label>Petal Length</label>
+    <input type="number" id="pl" step="any">
+
+    <label>Petal Width</label>
+    <input type="number" id="pw" step="any">
+
+    <button id="predictBtn">Predict</button>
+
+
+    <a href="History.html">
+    <button class="history-btn">View Prediction History</button>
+    </a>
+    <button onclick="goToUsers()">Manage Users</button>
+
+    <script>
+    function goToUsers() {
+    window.location.href = "users.html";
+    }
+    </script>
+
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

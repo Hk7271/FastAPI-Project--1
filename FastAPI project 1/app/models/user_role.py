@@ -1,0 +1,11 @@
+from sqlalchemy import Column, Integer, ForeignKey
+from app.db.session import Base
+
+class UserRole(Base):
+    __tablename__ = "user_roles"
+
+    user_id = Column(Integer, ForeignKey ("users.id",ondelete="RESTRICT"),
+                     primary_key= True)
+    role_id = Column(Integer, ForeignKey("roles.id",ondelete="RESTRICT"),
+                     primary_key= True)
+    

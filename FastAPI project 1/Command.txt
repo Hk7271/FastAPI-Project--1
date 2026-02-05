@@ -1,0 +1,5 @@
+venv\Scripts\activate
+
+python -m app.db.create_tables
+
+python -m uvicorn app.main:app --reload
